@@ -1,7 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
+var logedIn = true;
+
 export default function App() {
+  if(logedIn == true) {
+    return LogedIn();
+  }
+  else {
+    return NotLogedIn();
+  }
+}
+
+function NotLogedIn(){
+  return(
+    <>
+    U are not loged in, unfortunetly
+    </>
+  );
+}
+
+function LogedIn(){
   const user1 = new User ("John Doe", 25, "john@example.com");
   return (
     <>

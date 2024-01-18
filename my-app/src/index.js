@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import TestShop from './TestShop';
+import HandleButton from './HandleButton'
+import UpdateScreen from './ScreenUpdating'
+import Tic_tac_toe from './tic-tac-toe'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Tic_tac_toe />
   </React.StrictMode>
 );
 
